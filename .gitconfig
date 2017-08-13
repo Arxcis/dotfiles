@@ -1,0 +1,17 @@
+# .gitconfig sample file - https://gist.github.com/pksunkara/988716
+
+[user]
+	name = Jonas Johan solsvik
+	email = jonasjso@stud.ntnu.no
+
+[core]
+	editor = sublime
+	exludesfile = excludesfile = ~/.gitignore
+
+[alias]
+	s = status
+	sb = status -s -b
+	lg = log --oneline --graph --decorate
+
+[credential]
+	helper = cache
