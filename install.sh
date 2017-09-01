@@ -1,9 +1,14 @@
 #!/bin/bash
 # @author J. Solsvik
-# @brief Fresh install things
+# @brief Fresh install all the things
 
 #
-# Symlink dotfiles
+# SSH KEYGEN for github f.eks
+#
+#ssh-keygen -t rsa -b 4096 -C "jonas.solsvik@gmail.com"
+
+#
+# Symlink(softlink?) dotfiles
 #
 ln -s .profile    ~/.profile
 ln -s .gitconfig  ~/.gitconfig
@@ -16,6 +21,8 @@ ln -s .vimconfig  ~/.vimconfig
 mkdir ~/bin
 mkdir ~/github
 mkdir ~/github-ex
+mkdir ~/go
+mkdir ~/go/src
 
 #
 # brew
@@ -29,6 +36,7 @@ brew install R
 brew install python3 
 brew install go   
 brew install node   
+
 
 # Tools
 brew install npm     # Node package manager
