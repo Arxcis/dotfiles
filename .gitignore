@@ -1,3 +1,5 @@
+# .gitignore sample file - https://gist.github.com/pksunkara/988716
+
 # OS generated files #
 ######################
 .DS_Store*
