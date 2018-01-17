@@ -2,7 +2,15 @@
 
 # OS generated files #
 ######################
-.DS_Store*
+.DS_Store
 ehthumbs.db
 Icon?
 Thumbs.db
+
+
+# Binary files, external libraries and cache
+
+*vendor/
+*build/
+*bin/
+*cache/
