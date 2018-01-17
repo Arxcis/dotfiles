@@ -9,7 +9,6 @@ Thumbs.db
 
 
 # Binary files, external libraries and cache
-
 *vendor/
 *build/
 *bin/

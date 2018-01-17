@@ -46,6 +46,13 @@ brew install ipfs    # Interplanetary file system
 brew install heroku  # cloud PaaS
 brew install mysql   # mysql database shell
 brew install nmap
+brew install composer # php package manager
+
+# OpenGL / C++
+brew install glew
+brew install glfw
+brew install sdl2
+brew install cmake
 
 #
 # brew cask - https://caskroom.github.io
@@ -56,6 +63,7 @@ brew tap caskroom/cask
 brew cask install dotnet
 brew cask install google-cloud-sdk
 brew cask install docker
+brew cask install xampp
 
 # Tools
 brew cask install postman
@@ -63,6 +71,7 @@ brew cask install transmission
 brew cask install ethereum wallet
 brew cask install wireshark
 brew cask install virtualbox
+brew cask install obs
 
 # Browsers
 brew cask install google-chrome
@@ -77,6 +86,7 @@ brew cask install visual-studio-code
 brew cask install vlc
 brew cask install spotify
 brew cask install minecraft
+brew cask install steam
 
 # Communication
 brew cask install slack
