@@ -5,11 +5,11 @@
 	email = jonasjso@stud.ntnu.no
 
 [core]
-	editor = sublime
-	exludesfile = excludesfile = ~/.gitignore
+	editor = subl
+	exludesfile = ~/.gitignore
 
 [alias]
-	s = status
+	s  = status
 	sb = status -s -b
 	lg = log --oneline --graph --decorate
 
