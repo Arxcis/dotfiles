@@ -42,6 +42,16 @@ elif infocmp xterm-256color >/dev/null 2>&1; then
   export TERM='xterm-256color';
 fi;
 
+exists() {
+  command -v "$1" >/dev/null 2>&1
+}
+
+prompt_goto() {
+    if exists goto; then
+        echo " project $(project)"
+    fi
+}
+
 prompt_git() {
   local s='';
   local branchName='';
@@ -145,6 +155,7 @@ PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\] in ";
 PS1+="\[${green}\]\w"; # working directory full path
 PS1+="\$(prompt_git \"\[${white}\] on \[${violet}\]\" \"\[${blue}\]\")"; # Git repository details
+PS1+="\$(prompt_goto)" # Goto project
 PS1+="\n";
 PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
 export PS1;
