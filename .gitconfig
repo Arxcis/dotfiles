@@ -1,18 +1,20 @@
 # .gitconfig sample file - https://gist.github.com/pksunkara/988716
 
 [user]
-	name = Jonas Johan solsvik
-	email = jonasjso@stud.ntnu.no
-
+        name = Jonas Johan solsvik
+        email = jonas@maritimeoptima.com
+        signingkey = <signinkey example: C4F5C6A6850E5633>
 [core]
-	editor = subl
-	exludesfile = ~/.gitignore
+        editor = subl
 
 [alias]
-	s  = status
-	sb = status -s -b
-	lg = log --oneline --graph --decorate
+        s  = status
+        sb = status -s -b
+        lg = log --oneline --graph --decorate
 
 [credential]
-	helper = cache
-	
+        helper = cache
+
+[commit]
+        # https://help.github.com/articles/signing-commits-using-gpg/
+        gpgsign = true
