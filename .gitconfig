@@ -1,19 +1,17 @@
-# .gitconfig sample file - https://gist.github.com/pksunkara/988716
-
 [user]
         name = "Jonas Johan Solsvik"
         email = "jonas@maritimeoptima.com"
-        signingkey = <Example "S324BD6BA963D3"> 
+        signingkey = <example "3k3jfkj3k3fk3j"> 
 [core]
-        editor = vim 
+        editor = "vim" 
 
 [alias]
-        s  = status
-        sb = status -s -b
-        lg = log --oneline --graph --decorate
+        s  = "status"
+        sb = "status -s -b"
+        lg = "log --oneline --graph --decorate"
 
 [credential]
-        helper = cache
+        helper = "cache"
 
 [url "git@github.com:"]
         insteadOf = "https://github.com/"
@@ -24,3 +22,5 @@
 
 [pull]
         rebase = false
+        ff = "only"
+
