@@ -1,11 +1,11 @@
 # .gitconfig sample file - https://gist.github.com/pksunkara/988716
 
 [user]
-        name = Jonas
-        email = jonas@example.com
-        signingkey = <signinkey example: C4F5C6A6850E5633>
+        name = "Jonas Johan Solsvik"
+        email = "jonas@maritimeoptima.com"
+        signingkey = <Example "S324BD6BA963D3"> 
 [core]
-        editor = subl
+        editor = vim 
 
 [alias]
         s  = status
@@ -15,6 +15,12 @@
 [credential]
         helper = cache
 
+[url "git@github.com:"]
+        insteadOf = "https://github.com/"
+
 [commit]
         # https://help.github.com/articles/signing-commits-using-gpg/
         gpgsign = true
+
+[pull]
+        rebase = false
